@@ -1,0 +1,16 @@
+.header{
+    background-color: rgb(164, 122, 164);
+    height: 15rem;
+    width: 100%;
+    text-align: center;
+}
+
+.rounded-circle{
+    height: 16rem;
+    width: 16rem;
+}
+
+.card{
+    width: 30%;
+    margin: 2%;
+}
