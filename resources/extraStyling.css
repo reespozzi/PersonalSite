@@ -4,13 +4,29 @@
     width: 100%;
     text-align: center;
 }
-
 .rounded-circle{
     height: 16rem;
     width: 16rem;
 }
-
 .card{
     width: 30%;
-    margin: 2%;
+    margin: 4%;
+    height: 100%;
+}
+.headerText{
+    padding-top: 3rem;
+}
+.cardContainer{
+    width: 100%;
+}
+#viewGitCard{
+    float: left;
+    height: 100%;
+}
+#viewLinkedInCard{
+    float: right;
+    height: 100%;
+}
+body{
+    font-family: 'Playfair Display', serif;
 }
