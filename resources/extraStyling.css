@@ -9,24 +9,69 @@
     width: 16rem;
 }
 .card{
-    width: 30%;
-    margin: 4%;
-    height: 100%;
+    width: 25%;
+    margin: 3.5%;
+    height: 35rem;
 }
 .headerText{
     padding-top: 3rem;
 }
-.cardContainer{
-    width: 100%;
-}
 #viewGitCard{
     float: left;
-    height: 100%;
 }
 #viewLinkedInCard{
     float: right;
-    height: 100%;
 }
 body{
     font-family: 'Playfair Display', serif;
+}
+.card-footer{
+    background: transparent;
+    border-top: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .card{
+        width: 50%;
+        height: 16rem;
+        margin: 2%;
+    }
+    .card-img-top{
+        display: none;
+    }
+    .rounded-circle{
+        width: 6rem;
+        height: 6rem;
+    }
+    .header{
+        text-align: center;
+        height: 8rem;
+    }
+    .headerText{
+        width: 75%;
+        float: right;
+        display: none;
+    }
+    .imageContainer{
+        float: left;
+        margin-left: 1%;
+    }
+    #cardContainer{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-footer, .card, .card-body{
+        width: 100%;
+    }
+    #cardContainer{
+        display: grid;
+    }
+    .card{
+        width: 100%;
+        height: 12rem;
+        margin: 2%;
+    }
 }
