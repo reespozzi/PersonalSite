@@ -4,17 +4,24 @@
     width: 100%;
     text-align: center;
 }
+.footer{
+    background-color: rgb(96, 70, 96);
+    height: 15rem;
+}
 .rounded-circle{
     height: 16rem;
     width: 16rem;
 }
 .card{
-    width: 25%;
+    width: 31.5%;
     margin: 3.5%;
     height: 35rem;
 }
 .headerText{
     padding-top: 3rem;
+}
+#cardContainer{
+    display: flow-root;
 }
 #viewGitCard{
     float: left;
@@ -23,11 +30,31 @@
     float: right;
 }
 body{
+    background-color: rgb(174, 211, 138);
     font-family: 'Playfair Display', serif;
 }
 .card-footer{
     background: transparent;
     border-top: none;
+}
+.moreInfoContainer{
+    display: block;
+}
+details > summary {
+    padding: 0.8%;
+    background-color: rgb(131, 189, 163);
+    border: solid black 0.1rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+ul{
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
 }
 
 
@@ -62,12 +89,12 @@ body{
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 450px) {
     .card-footer, .card, .card-body{
         width: 100%;
     }
     #cardContainer{
-        display: grid;
+        display: compact;
     }
     .card{
         width: 100%;
