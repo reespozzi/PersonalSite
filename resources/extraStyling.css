@@ -6,15 +6,24 @@
 }
 .footer{
     background-color: rgb(96, 70, 96);
+    display: flex;
+    text-align: center;
+    align-items: center;
     height: 15rem;
+    width: 100%;
+}
+.spotify{
+    object-fit: contain;
+    width: 25%;
+    height: 50%;
 }
 .rounded-circle{
-    height: 16rem;
-    width: 16rem;
+    height: 19rem;
+    width: 19rem;
 }
 .card{
     width: 31.5%;
-    margin: 3.5%;
+    margin: 5.5%;
     height: 45rem;
 }
 .headerText{
@@ -58,7 +67,7 @@ ul{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1080px) {
     .card{
         width: 50%;
         height: 16rem;
@@ -71,6 +80,7 @@ ul{
         width: 6rem;
         height: 6rem;
     }
+    
     .header{
         text-align: center;
         height: 8rem;
