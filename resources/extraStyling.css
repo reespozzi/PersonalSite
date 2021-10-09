@@ -1,10 +1,11 @@
-.header{
+/* id properties */
+#header{
     background-color: rgb(164, 122, 164);
     height: 15rem;
     width: 100%;
     text-align: center;
 }
-.footer{
+#footer{
     background-color: rgb(96, 70, 96);
     display: flex;
     text-align: center;
@@ -12,22 +13,16 @@
     height: 15rem;
     width: 100%;
 }
-.spotify{
-    object-fit: contain;
-    width: 25%;
-    height: 50%;
+#currentWork{
+    padding: 3%; 
+    margin: 2%;
+    text-align: center;
 }
-.rounded-circle{
-    height: 19rem;
-    width: 19rem;
-}
-.card{
-    width: 31.5%;
-    margin: 5.5%;
-    height: 45rem;
-}
-.headerText{
+#headerTextContainer{
     padding-top: 3rem;
+}
+#headerText{
+    color: wheat;
 }
 #cardContainer{
     display: flow-root;
@@ -38,16 +33,34 @@
 #viewLinkedInCard{
     float: right;
 }
-body{
-    background-color: rgb(174, 211, 138);
-    font-family: 'Playfair Display', serif;
+#spotify{
+    object-fit: contain;
+    width: 25%;
+    height: 50%;
+}
+#moreInfoContainer{
+    display: block;
+}
+
+/* class properties */
+.rounded-circle{
+    height: 19rem;
+    width: 19rem;
+}
+.card{
+    width: 31.5%;
+    margin: 5.5%;
+    height: 45rem;
 }
 .card-footer{
     background: transparent;
     border-top: none;
 }
-.moreInfoContainer{
-    display: block;
+
+/* element properties */
+body{
+    background-color: rgb(174, 211, 138);
+    font-family: 'Playfair Display', serif;
 }
 details > summary {
     padding: 0.8%;
@@ -65,6 +78,9 @@ ul{
     margin-right: auto;
     width: 85%;
 }
+h2{
+    text-align: center;
+}
 
 
 @media screen and (max-width: 1080px) {
@@ -81,16 +97,14 @@ ul{
         height: 6rem;
     }
     
-    .header{
+    #header{
         text-align: center;
         height: 8rem;
     }
-    .headerText{
-        width: 75%;
-        float: right;
+    #headerTextContainer{
         display: none;
     }
-    .imageContainer{
+    #imageContainer{
         float: left;
         margin-left: 1%;
     }
