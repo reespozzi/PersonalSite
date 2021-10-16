@@ -24,7 +24,7 @@ jobs:
       with:
         azcliversion: 2.0.72
         inlineScript: |
-            az storage blob upload-batch --account-name personalsitestacc  --auth-mode key -d '$web' -s .
+            az storage blob upload-batch --account-name storeacc  --auth-mode key -d '$web' -s .
    
          
       # Azure logout
