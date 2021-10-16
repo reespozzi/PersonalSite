@@ -1,0 +1,128 @@
+/* id properties */
+#header{
+    background-color: rgb(164, 122, 164);
+    height: 15rem;
+    width: 100%;
+    text-align: center;
+}
+#footer{
+    background-color: rgb(96, 70, 96);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 15rem;
+    width: 100%;
+}
+#currentWork{
+    padding: 3%; 
+    margin: 2%;
+    text-align: center;
+}
+#headerTextContainer{
+    padding-top: 3rem;
+}
+#headerText{
+    color: wheat;
+}
+#cardContainer{
+    display: flow-root;
+}
+#viewGitCard{
+    float: left;
+}
+#viewLinkedInCard{
+    float: right;
+}
+#spotify{
+    object-fit: contain;
+    width: 25%;
+    height: 50%;
+}
+#moreInfoContainer{
+    display: block;
+}
+
+/* class properties */
+.rounded-circle{
+    height: 19rem;
+    width: 19rem;
+}
+.card{
+    width: 31.5%;
+    margin: 5.5%;
+    height: 45rem;
+}
+.card-footer{
+    background: transparent;
+    border-top: none;
+}
+
+/* element properties */
+body{
+    background-color: rgb(174, 211, 138);
+    font-family: 'Playfair Display', serif;
+}
+details > summary {
+    padding: 0.8%;
+    background-color: rgb(131, 189, 163);
+    border: solid black 0.1rem;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+ul{
+    background-color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+h2{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1080px) {
+    .card{
+        width: 50%;
+        height: 16rem;
+        margin: 2%;
+    }
+    .card-img-top{
+        display: none;
+    }
+    .rounded-circle{
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    #header{
+        text-align: center;
+        height: 8rem;
+    }
+    #headerTextContainer{
+        display: none;
+    }
+    #imageContainer{
+        float: left;
+        margin-left: 1%;
+    }
+    #cardContainer{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card-footer, .card, .card-body{
+        width: 100%;
+    }
+    #cardContainer{
+        display: compact;
+    }
+    .card{
+        width: 100%;
+        height: 12rem;
+        margin: 2%;
+    }
+}
