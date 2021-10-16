@@ -117,14 +117,11 @@ h2{
     .card-footer, .card-body{
         width: 100%;
     }
-    .card{
-        width: 96%;
-    }
     #cardContainer{
         display: grid;
     }
     .card{
-        width: 100%;
+        width: 96%;
         height: 12rem;
         margin: 2%;
     }
