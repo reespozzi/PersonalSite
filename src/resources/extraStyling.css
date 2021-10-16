@@ -114,8 +114,11 @@ h2{
 }
 
 @media screen and (max-width: 650px) {
-    .card-footer, .card, .card-body{
+    .card-footer, .card-body{
         width: 100%;
+    }
+    .card{
+        width: 96%;
     }
     #cardContainer{
         display: grid;
