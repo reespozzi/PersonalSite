@@ -14,15 +14,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: azure/login@v1
+    steps: 
+    - uses: actions/checkout@v1
+    - uses: actions/setup-dotnet@v1
       with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
-          azcliversion: 2.1.0
-          inlineScript: |
-              az storage blob upload-batch --account-name personalsitestacc --auth-mode login -d '$web' -s .
-   
+        dotnet-version: '3.0.100'
+    - uses: reespozzi/PersonalSite
+      with:
+        enabled-static-website: 'true'
+        folder: 'src'
+        index-document: 'site.html'
+        connection-string: ${{ secrets.CONNECTION_STRING }}
          
       # Azure logout
     - name: logout
