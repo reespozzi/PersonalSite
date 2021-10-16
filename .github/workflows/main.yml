@@ -19,12 +19,9 @@ jobs:
     - uses: azure/login@v1
       with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - name: Upload to blob storage
-      uses: azure/CLI@v1
-      with:
-        azcliversion: 2.1.0
-        inlineScript: |
-            az storage blob upload-batch --account-name personalsitestacc --connection-string ${{secrets.connectionString}} -d '$web' -s .
+          azcliversion: 2.1.0
+          inlineScript: |
+              az storage blob upload-batch --account-name personalsitestacc --auth-mode login -d '$web' -s .
    
          
       # Azure logout
