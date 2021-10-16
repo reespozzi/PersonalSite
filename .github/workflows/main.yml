@@ -24,7 +24,7 @@ jobs:
       with:
         azcliversion: 2.1.0
         inlineScript: |
-            az storage blob upload-batch --account-name personalsitestacc -d '$web' -s .
+            az storage blob upload-batch --account-name personalsitestacc --connection-string ${{secrets.connectionString}} -d '$web' -s .
    
          
       # Azure logout
