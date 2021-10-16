@@ -25,9 +25,3 @@ jobs:
         folder: 'src'
         index-document: 'site.html'
         connection-string: ${{ secrets.CONNECTION_STRING }}
-         
-      # Azure logout
-    - name: logout
-      run: |
-            az logout
-      if: always()
