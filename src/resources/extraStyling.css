@@ -118,7 +118,7 @@ h2{
         width: 100%;
     }
     #cardContainer{
-        display: compact;
+        display: grid;
     }
     .card{
         width: 100%;
