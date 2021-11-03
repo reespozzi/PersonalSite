@@ -23,5 +23,5 @@ jobs:
       with:
         enabled-static-website: 'true'
         folder: 'src'
-        index-document: 'site.html'
+        index-document: 'index.html'
         connection-string: ${{ secrets.CONNECTION_STRING }}
