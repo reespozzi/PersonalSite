@@ -62,6 +62,7 @@
 body{
     background-color: rgb(107, 174, 210);
     font-family: 'Playfair Display', serif;
+    color: white;
 }
 details > summary {
     padding: 0.8%;
