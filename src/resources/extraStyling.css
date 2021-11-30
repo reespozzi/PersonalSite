@@ -1,6 +1,6 @@
 /* id properties */
 #header{
-    background-color: rgb(164, 122, 164);
+    background-color: rgb(107, 174, 210);
     height: 15rem;
     width: 100%;
     text-align: center;
@@ -59,7 +59,7 @@
 
 /* element properties */
 body{
-    background-color: rgb(163, 196, 214);
+    background-color: rgb(107, 174, 210);
     font-family: 'Playfair Display', serif;
 }
 details > summary {
