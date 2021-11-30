@@ -6,7 +6,7 @@
     text-align: center;
 }
 #footer{
-    background-color: rgb(96, 70, 96);
+    background-color: rgb(39, 40, 39);
     display: flex;
     text-align: center;
     align-items: center;
@@ -65,7 +65,7 @@ body{
 }
 details > summary {
     padding: 0.8%;
-    background-color: rgb(236, 187, 138);
+    background-color: rgb(233, 153, 190);
     border: solid black 0.1rem;
     width: 85%;
     margin-left: auto;
