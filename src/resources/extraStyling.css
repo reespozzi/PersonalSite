@@ -13,6 +13,11 @@
     height: 15rem;
     width: 100%;
 }
+#badgeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
 #currentWork{
     padding: 3%; 
     margin: 2%;
