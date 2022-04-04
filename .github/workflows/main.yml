@@ -16,11 +16,9 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
     - uses: actions/checkout@v1
-    - task: Bash@3
-      displayName: 'Lint Users file'
-      inputs:
-        filePath: 'src/linter.sh'
-        failOnStderr: true
+    - name: Lint Submission
+      run: src/linter.sh
+      shell: bash
     - uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '3.0.100'
