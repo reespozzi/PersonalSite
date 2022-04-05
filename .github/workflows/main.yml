@@ -35,6 +35,6 @@ jobs:
             az logout
       if: always()
     # logout of azure
-    - name: Site available at:
+    - name: Site available
       run: |
             echo "https://reespozzi.z13.web.core.windows.net/"
