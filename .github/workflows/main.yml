@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Lint Submission
       working-directory: .
-      run: ./linter.sh
+      run: ./scripts/linter.sh
       shell: bash
     - uses: actions/setup-dotnet@v1
       with:
