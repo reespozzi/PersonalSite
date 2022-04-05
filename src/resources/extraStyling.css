@@ -56,11 +56,23 @@
 .card{
     width: 31.5%;
     margin: 5.5%;
-    height: 45rem;
+    height: 30rem;
 }
 .card-footer{
     background: transparent;
     border-top: none;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 1%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* element properties */
@@ -90,7 +102,7 @@ h2{
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 0px) {
     .card{
         width: 50%;
         height: 16rem;
@@ -120,16 +132,3 @@ h2{
     }
 }
 
-@media screen and (max-width: 650px) {
-    .card-footer, .card-body{
-        width: 100%;
-    }
-    #cardContainer{
-        display: grid;
-    }
-    .card{
-        width: 96%;
-        height: 12rem;
-        margin: 2%;
-    }
-}
