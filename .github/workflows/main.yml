@@ -29,7 +29,7 @@ jobs:
       with:
         inlineScript: |
             az storage blob upload-batch --account-name reespozzi --overwrite true --auth-mode key -d '$web' -s .
-            az storage blob copy start --account-name reespozzi --destination-blob . --destination-container '$web' -s https://reespozzi.blob.core.windows.net/$web/src/index.html
+            az storage blob copy start --account-name reespozzi --destination-blob . --destination-container '$web' --source-uri https://reespozzi.blob.core.windows.net/$web/src/index.html
     # logout of azure
     - name: Log out and finish
       run: |
